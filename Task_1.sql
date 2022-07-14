@@ -8,7 +8,7 @@ create table if not exists Performer (
 	Name varchar(60) not null
 );
 
-create table of not exists Genre_of_performer (
+create table if not exists Genre_of_performer (
 	ID serial primary key,
 	Genre integer not null references Music_genre(ID),
 	Performer integer not null references Performer(ID)
